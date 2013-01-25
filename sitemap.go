@@ -87,7 +87,7 @@ func SiteMapIndex(folder, indexFile, baseurl string) error {
 		if strings.HasSuffix(f.Name(), ".xml.gz") {
 			fmt.Println(f.Name())
 			s := fmt.Sprintf(indexTemplate, baseurl, f.Name(), time.Now().Format("2006-01-02T15:04:05+08:00"))
-			fmt.Println(s)
+			//fmt.Println(s)
 			buffer.WriteString(s)
 		}
 	}
